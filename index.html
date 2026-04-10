@@ -1,141 +1,554 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Akanksha Kumari – Resume</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f4f8; display: flex; justify-content: center; padding: 24px 12px; }
-  .resume { background: #fff; width: 780px; min-height: 1100px; border-radius: 0; box-shadow: 0 4px 32px rgba(0,0,0,0.13); overflow: hidden; }
-  .header { background: linear-gradient(135deg, #1a3a5c 0%, #2563a8 100%); color: #fff; padding: 36px 40px 28px; position: relative; }
-  .header-name { font-size: 34px; font-weight: 700; letter-spacing: 2px; color: #fff; }
-  .header-title { font-size: 14px; color: #a8c8f0; margin-top: 4px; letter-spacing: 1px; text-transform: uppercase; }
-  .header-contacts { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 18px; }
-  .header-contact { display: flex; align-items: center; gap: 5px; font-size: 12px; color: #cce0f7; }
-  .header-contact a { color: #7ec8f4; text-decoration: none; }
-  .accent-bar { height: 5px; background: linear-gradient(90deg, #f59e0b 0%, #2563a8 100%); }
-  .body { display: flex; }
-  .sidebar { width: 220px; background: #f0f6ff; padding: 24px 18px; flex-shrink: 0; }
-  .main { flex: 1; padding: 24px 28px; }
-  .section-title { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: #2563a8; border-bottom: 2px solid #2563a8; padding-bottom: 4px; margin-bottom: 12px; margin-top: 20px; }
-  .sidebar .section-title { margin-top: 16px; }
-  .sidebar .section-title:first-child { margin-top: 0; }
-  .skill-tag { display: inline-block; background: #dbeafe; color: #1e40af; font-size: 11px; border-radius: 10px; padding: 3px 10px; margin: 3px 2px; font-weight: 500; }
-  .lang-item { font-size: 12px; color: #374151; padding: 3px 0; }
-  .cert-item { font-size: 11.5px; color: #374151; padding: 4px 0 4px 10px; border-left: 3px solid #f59e0b; margin-bottom: 6px; line-height: 1.4; }
-  .edu-degree { font-size: 13px; font-weight: 700; color: #1a3a5c; }
-  .edu-sub { font-size: 11.5px; color: #4b5563; margin-top: 2px; }
-  .edu-year { font-size: 11px; color: #9ca3af; margin-top: 1px; }
-  .exp-role { font-size: 14px; font-weight: 700; color: #1a3a5c; }
-  .exp-meta { display: flex; justify-content: space-between; align-items: center; margin-top: 2px; }
-  .exp-company { font-size: 12px; color: #2563a8; font-weight: 600; }
-  .exp-date { font-size: 11px; color: #9ca3af; }
-  .exp-bullets { margin-top: 7px; padding-left: 16px; }
-  .exp-bullets li { font-size: 12px; color: #374151; margin-bottom: 4px; line-height: 1.5; }
-  .project-card { background: #f8faff; border-left: 3px solid #2563a8; border-radius: 0 6px 6px 0; padding: 8px 12px; margin-bottom: 10px; }
-  .project-name { font-size: 12.5px; font-weight: 700; color: #1a3a5c; }
-  .project-desc { font-size: 11px; color: #6b7280; margin-top: 3px; line-height: 1.45; }
-  .projects-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
-  .summary-text { font-size: 12px; color: #374151; line-height: 1.7; }
-</style>
-</head>
-<body>
-<div class="resume">
-  <div class="header">
-    <div class="header-name">AKANKSHA KUMARI</div>
-    <div class="header-title">Web Developer &nbsp;|&nbsp; B.Tech CSE &nbsp;|&nbsp; Haryana, India</div>
-    <div class="header-contacts">
-      <div class="header-contact">📞 +91-9693811760</div>
-      <div class="header-contact">✉ akankshakumari90816@gmail.com</div>
-      <div class="header-contact"><a href="https://www.linkedin.com/in/akanksha-kumari-781335337">LinkedIn</a></div>
-      <div class="header-contact"><a href="https://github.com/akanksha-076/Akanksha-s_Portfolio.git">GitHub</a></div>
-      <div class="header-contact"><a href="https://glistening-puffpuff-9f5a0d.netlify.app/#projects">Portfolio</a></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akanksha Kumari – Resume</title>
+  </head>
+  <body>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .page {
+        width: 100%;
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 12px;
+      }
+      .resume {
+        background: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        border: 1px solid #e0e0e0;
+        display: flex;
+      }
+      .left {
+        width: 260px;
+        min-width: 260px;
+        background: #1a2b4a;
+        color: #fff;
+        padding: 28px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      .right {
+        flex: 1;
+        padding: 28px 24px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+      }
+      .avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #3b6fd4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        font-weight: 700;
+        color: #fff;
+        border: 3px solid #4a90d9;
+        margin: 0 auto 6px;
+        letter-spacing: 1px;
+      }
+      .name-block {
+        text-align: center;
+      }
+      .name-block h1 {
+        font-size: 17px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 1.3;
+      }
+      .name-block p {
+        font-size: 11px;
+        color: #9db8e0;
+        margin-top: 4px;
+      }
+      .stl {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        color: #4a90d9;
+        text-transform: uppercase;
+        border-bottom: 1px solid #2e4a7a;
+        padding-bottom: 5px;
+        margin-bottom: 8px;
+      }
+      .ci {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 7px;
+      }
+      .ci svg {
+        flex-shrink: 0;
+      }
+      .ct {
+        font-size: 11px;
+        color: #bdd0ea;
+        line-height: 1.4;
+        font-family: Arial, sans-serif;
+        vertical-align: middle;
+      }
+      .ct a {
+        color: #7fb3e8;
+        text-decoration: none;
+        font-family: Arial, sans-serif;
+      }
+      .skill-badge {
+        display: inline-block;
+        background: #253d6a;
+        color: #9db8e0;
+        border-radius: 20px;
+        padding: 3px 10px;
+        font-size: 10.5px;
+        margin: 3px 2px;
+        border: 1px solid #2e4f85;
+      }
+      .skill-badge.h {
+        background: #1d4a99;
+        color: #c5d9f5;
+        border-color: #3b72cc;
+      }
+      .lp {
+        display: inline-block;
+        background: #1d3d6a;
+        color: #9db8e0;
+        border-radius: 20px;
+        padding: 3px 12px;
+        font-size: 11px;
+        margin: 2px 3px;
+      }
+      .str {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        color: #1a2b4a;
+        text-transform: uppercase;
+        border-left: 3px solid #3b6fd4;
+        padding-left: 8px;
+        margin-bottom: 10px;
+      }
+      .summary-text {
+        font-size: 11.5px;
+        color: #444;
+        line-height: 1.6;
+      }
+      .eh {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .et {
+        font-size: 12.5px;
+        font-weight: 700;
+        color: #1a2b4a;
+      }
+      .ec {
+        font-size: 11px;
+        color: #3b6fd4;
+        font-weight: 600;
+        margin-top: 1px;
+      }
+      .ed {
+        font-size: 10.5px;
+        color: #fff;
+        background: #3b6fd4;
+        border-radius: 20px;
+        padding: 2px 9px;
+        white-space: nowrap;
+      }
+      .eb {
+        margin-top: 6px;
+        padding-left: 14px;
+      }
+      .eb li {
+        font-size: 11px;
+        color: #555;
+        margin-bottom: 3px;
+        line-height: 1.5;
+      }
+      .edu-block {
+        margin-bottom: 10px;
+      }
+      .edu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+      .edu-deg {
+        font-size: 12px;
+        font-weight: 700;
+        color: #1a2b4a;
+      }
+      .edu-inst {
+        font-size: 11px;
+        color: #3b6fd4;
+        margin-top: 1px;
+      }
+      .edu-note {
+        font-size: 10.5px;
+        color: #777;
+        margin-top: 3px;
+      }
+      .pg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+      }
+      .pc {
+        background: #f3f7fd;
+        border-radius: 7px;
+        padding: 8px 10px;
+        border-left: 3px solid #3b6fd4;
+      }
+      .pn {
+        font-size: 11px;
+        font-weight: 700;
+        color: #1a2b4a;
+      }
+      .pd {
+        font-size: 10px;
+        color: #666;
+        margin-top: 2px;
+        line-height: 1.4;
+      }
+      .divider {
+        height: 1px;
+        background: #eef2f9;
+        margin: 2px 0;
+      }
+    </style>
+
+    <div class="page">
+      <div class="resume">
+        <div class="left">
+          <div>
+            <div class="avatar">AK</div>
+            <div class="name-block">
+              <h1>Akanksha Kumari</h1>
+              <p>Web Developer &amp; B.Tech CSE Student</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="stl">Contact</div>
+
+            <div class="ci">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#4A90D9"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.15 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.06 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 16z"
+                />
+              </svg>
+              <span class="ct" style="font-family: Arial, sans-serif"
+                >+91-9693811760</span
+              >
+            </div>
+
+            <div class="ci">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#4A90D9"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              <span class="ct" style="font-family: Arial, sans-serif"
+                >akankshakumari90816@gmail.com</span
+              >
+            </div>
+
+            <div class="ci">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#4A90D9"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span class="ct">Haryana, India</span>
+            </div>
+
+            <div class="ci">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#4A90D9"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              <span class="ct"
+                ><a href="https://www.linkedin.com/in/akanksha-kumari-781335337"
+                  >linkedin.com/in/akanksha-kumari</a
+                ></span
+              >
+            </div>
+
+            <div class="ci">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#4A90D9"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path
+                  d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
+                />
+              </svg>
+              <span class="ct"
+                ><a
+                  href="https://glistening-puffpuff-9f5a0d.netlify.app/#projects"
+                  >Portfolio (Live)</a
+                ></span
+              >
+            </div>
+
+            <div class="ci">
+              <svg
+                width="13"
+                height="13"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#4A90D9"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                />
+              </svg>
+              <span class="ct"
+                ><a href="https://github.com/akanksha-076"
+                  >github.com/akanksha-076</a
+                ></span
+              >
+            </div>
+          </div>
+
+          <div>
+            <div class="stl">Skills</div>
+            <span class="skill-badge h">HTML5</span
+            ><span class="skill-badge h">CSS3</span
+            ><span class="skill-badge h">JavaScript</span
+            ><span class="skill-badge h">React</span
+            ><span class="skill-badge">Python</span
+            ><span class="skill-badge">MySQL</span
+            ><span class="skill-badge">Git</span
+            ><span class="skill-badge">GitHub</span
+            ><span class="skill-badge">Netlify</span
+            ><span class="skill-badge">VS Code</span>
+          </div>
+
+          <div>
+            <div class="stl">Languages</div>
+            <span class="lp">English</span><span class="lp">Hindi</span>
+          </div>
+
+          <div>
+            <div class="stl">Certifications</div>
+            <div style="font-size: 10.5px; color: #9db8e0; line-height: 1.8">
+              <span style="color: #4a90d9; font-weight: 700">&#10003;</span>
+              Intro to Digital Transformation<br />
+              &nbsp;&nbsp;with Google Cloud<br />
+              &nbsp;&nbsp;<span style="color: #7fb3e8">— Simplilearn</span
+              ><br />
+              <span style="color: #4a90d9; font-weight: 700">&#10003;</span>
+              Introduction to Artificial<br />
+              &nbsp;&nbsp;Intelligence<br />
+              &nbsp;&nbsp;<span style="color: #7fb3e8">— Simplilearn</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+        <div class="right">
+          <div>
+            <div class="str">Professional Summary</div>
+            <p class="summary-text">
+              Motivated B.Tech CSE student and Web Development Intern at Prodigy
+              Infotech with hands-on experience building responsive, interactive
+              web applications. Skilled in HTML, CSS, JavaScript, React, and
+              Python with a strong portfolio of real-world projects. Passionate
+              about writing clean code and creating seamless user experiences.
+            </p>
+          </div>
+          <div class="divider"></div>
+
+          <div>
+            <div class="str">Work Experience</div>
+            <div class="eh">
+              <div>
+                <div class="et">Web Development Intern</div>
+                <div class="ec">Prodigy Infotech</div>
+              </div>
+              <div class="ed">2026</div>
+            </div>
+            <ul class="eb">
+              <li>
+                Built responsive web apps using HTML, CSS, and JavaScript.
+              </li>
+              <li>
+                Developed games, utility tools, and website clones as internship
+                tasks.
+              </li>
+              <li>
+                Applied clean, maintainable front-end coding best practices.
+              </li>
+              <li>
+                Worked on dynamic UI features and interactive user interfaces.
+              </li>
+            </ul>
+          </div>
+          <div class="divider"></div>
+
+          <div>
+            <div class="str">Education</div>
+            <div class="edu-block">
+              <div class="edu-header">
+                <div>
+                  <div class="edu-deg">
+                    B.Tech — Computer Science &amp; Engineering
+                  </div>
+                  <div class="edu-inst">K.R. Mangalam University, Haryana</div>
+                </div>
+                <div class="ed">2026 – Present</div>
+              </div>
+            </div>
+            <div class="edu-block">
+              <div class="edu-header">
+                <div>
+                  <div class="edu-deg">Class 1 – 12 (Schooling)</div>
+                  <div class="edu-inst">
+                    PM SHRI Kendriya Vidyalaya Garhara, Begusarai, Bihar
+                  </div>
+                </div>
+                <div class="ed">2012 – 2024</div>
+              </div>
+              <div class="edu-note">
+                &#9733; Scored <strong style="color: #1a2b4a">82.2%</strong> in
+                Class 12th Board Examination
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+
+          <div>
+            <div class="str">Projects</div>
+            <div class="pg">
+              <div class="pc">
+                <div class="pn">E-Commerce Skincare Website</div>
+                <div class="pd">
+                  Fully designed skincare store with product listings, cart UI
+                  &amp; responsive layout. Built with HTML, CSS, JS.
+                </div>
+              </div>
+              <div class="pc">
+                <div class="pn">Portfolio Website</div>
+                <div class="pd">
+                  Personal portfolio showcasing projects, skills &amp; contact —
+                  live on Netlify.
+                </div>
+              </div>
+              <div class="pc">
+                <div class="pn">Calorie Tracker</div>
+                <div class="pd">
+                  Python-based app to log meals, track daily calorie intake and
+                  monitor nutrition goals.
+                </div>
+              </div>
+              <div class="pc">
+                <div class="pn">Weather Tracker</div>
+                <div class="pd">
+                  Live weather app fetching city-wise data via public API using
+                  JavaScript.
+                </div>
+              </div>
+              <div class="pc">
+                <div class="pn">Amazon Clone</div>
+                <div class="pd">
+                  Front-end replica of Amazon homepage with nav, product cards
+                  &amp; footer.
+                </div>
+              </div>
+              <div class="pc">
+                <div class="pn">Tic Tac Toe Game</div>
+                <div class="pd">
+                  Two-player browser game with win/draw detection &amp; restart.
+                  Built with HTML, CSS, JS.
+                </div>
+              </div>
+              <div class="pc">
+                <div class="pn">Stopwatch App</div>
+                <div class="pd">
+                  Start, stop, lap &amp; reset with real-time millisecond
+                  precision in JS.
+                </div>
+              </div>
+              <div class="pc">
+                <div class="pn">Calculator</div>
+                <div class="pd">
+                  Fully functional arithmetic calculator with clean responsive
+                  design.
+                </div>
+              </div>
+              <div class="pc">
+                <div class="pn">Photo Gallery</div>
+                <div class="pd">
+                  Responsive image gallery with CSS grid layout and hover
+                  effects.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="accent-bar"></div>
-  <div class="body">
-    <div class="sidebar">
-      <div class="section-title">Skills</div>
-      <div>
-        <span class="skill-tag">HTML5</span>
-        <span class="skill-tag">CSS3</span>
-        <span class="skill-tag">JavaScript</span>
-        <span class="skill-tag">React</span>
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">MySQL</span>
-        <span class="skill-tag">Git</span>
-        <span class="skill-tag">GitHub</span>
-        <span class="skill-tag">Netlify</span>
-      </div>
-
-      <div class="section-title">Education</div>
-      <div class="edu-degree">B.Tech — CSE (Core)</div>
-      <div class="edu-sub">K.R. Mangalam University</div>
-      <div class="edu-year">2022 – Present (2026)</div>
-
-      <div class="section-title">Languages</div>
-      <div class="lang-item">🌐 English</div>
-      <div class="lang-item">🌐 Hindi</div>
-
-      <div class="section-title">Certification</div>
-      <div class="cert-item">Introduction to Digital Transformation with Google Cloud<br><span style="color:#9ca3af;font-size:10.5px;">Simplilearn</span></div>
-
-      <div class="section-title">Links</div>
-      <div style="font-size:11.5px; line-height:2;">
-        <div><a href="https://glistening-puffpuff-9f5a0d.netlify.app/#projects" style="color:#2563a8;">🌐 Live Portfolio</a></div>
-        <div><a href="https://github.com/akanksha-076/Akanksha-s_Portfolio.git" style="color:#2563a8;">💻 GitHub</a></div>
-        <div><a href="https://www.linkedin.com/in/akanksha-kumari-781335337" style="color:#2563a8;">🔗 LinkedIn</a></div>
-      </div>
-    </div>
-    <div class="main">
-      <div class="section-title" style="margin-top:0;">Summary</div>
-      <div class="summary-text">Motivated B.Tech CSE student with hands-on web development experience through an internship at Prodigy Infotech (2026). Skilled in building interactive, user-friendly web applications using HTML, CSS, JavaScript, and React. Eager to contribute to dynamic development teams.</div>
-
-      <div class="section-title">Work Experience</div>
-      <div>
-        <div class="exp-role">Web Development Intern</div>
-        <div class="exp-meta">
-          <div class="exp-company">Prodigy Infotech</div>
-          <div class="exp-date">2026</div>
-        </div>
-        <ul class="exp-bullets">
-          <li>Developed responsive web applications using HTML, CSS, and JavaScript.</li>
-          <li>Built interactive projects including games, utility apps, and website clones.</li>
-          <li>Applied best practices in front-end design and dynamic UI development.</li>
-          <li>Collaborated on clean, maintainable code for real-world use cases.</li>
-        </ul>
-      </div>
-
-      <div class="section-title">Projects</div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-name">Tic Tac Toe Game</div>
-          <div class="project-desc">Two-player browser game with win/draw detection & restart — HTML, CSS, JS.</div>
-        </div>
-        <div class="project-card">
-          <div class="project-name">Calculator</div>
-          <div class="project-desc">Fully functional arithmetic calculator with a clean responsive UI.</div>
-        </div>
-        <div class="project-card">
-          <div class="project-name">Amazon Clone</div>
-          <div class="project-desc">Front-end replica of the Amazon homepage with nav, cards & footer.</div>
-        </div>
-        <div class="project-card">
-          <div class="project-name">Stopwatch App</div>
-          <div class="project-desc">Start, stop, lap & reset with real-time millisecond precision in JS.</div>
-        </div>
-        <div class="project-card">
-          <div class="project-name">Photo Gallery</div>
-          <div class="project-desc">Responsive image grid with hover effects using HTML & CSS.</div>
-        </div>
-        <div class="project-card">
-          <div class="project-name">Weather Tracker</div>
-          <div class="project-desc">Live weather data for any city using a public API & JavaScript.</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</body>
+  </body>
 </html>
